@@ -23,6 +23,7 @@ function currentLine(katzDeliLine) {
   } else {
     var list = []
     for(var i = 0; i < katzDeliLine.length; i++) {
+      //Create new array with a space, number in line with period, and name. Array puts commas in for you.
       list.push(' '+(i+1)+'. '+katzDeliLine[i])
     }
     return 'The line is currently:'+list
