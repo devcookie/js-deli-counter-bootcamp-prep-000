@@ -30,6 +30,6 @@ function currentLine(katzDeliLine) {
     countdown --
     num++
     }
-    return `The line is currently: ${addToArray}.`
+    return `The line is currently: ${num}, ${katzDeliLine.shift()}.`
   }
 }
