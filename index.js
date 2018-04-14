@@ -22,7 +22,9 @@ function currentLine(katzDeliLine) {
     return `The line is currently 1. ${katzDeliLine[0]}.`
   } else {
     var list = []
-    for(var i = 0; i <)
-    return `The line is currently: ${katzDeliLine.join(', ')}.`
+    for(var i = 0; i < katzDeliLine.length; i++) {
+      list = 
+      return `The line is currently: ${katzDeliLine.join(', ')}.`
+    }
   }
 }
