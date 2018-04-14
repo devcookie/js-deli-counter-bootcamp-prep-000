@@ -21,10 +21,14 @@ function currentLine(katzDeliLine) {
   } else if(katzDeliLine.length === 1) {
     return `The line is currently 1. ${katzDeliLine[0]}.`
   } else {
-    for(var i = 0; i < katzDeliLine.length; i++) {
-      var addToArray = `${i}`+katzDeliLine.pop()+`, `
-      katzDeliLine.unshift(addToArray)
-      return `The line is currently: ${katzDeliLine}.`
-    }
+    var addToArray = []
+    var countdown = katzDeliLine.length
+    var num = 1
+    while(countdown >= 0) {
+    addToArray = `${num}`+katzDeliLine.pop()
+    katzDeliLine.unshift(addToArray)
+    countdown --
+    num++
+  }
   }
 }
