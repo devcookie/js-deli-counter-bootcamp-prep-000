@@ -26,6 +26,6 @@ function currentLine(katzDeliLine) {
       list.push(i+1+'. '+katzDeliLine[i])
       
     }
-    return `The line is currently: `${list.join(', ')}+`.`
+    return 'The line is currently: '+$list.join(', ')+'.'
   }
 }
