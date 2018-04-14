@@ -21,15 +21,7 @@ function currentLine(katzDeliLine) {
   } else if(katzDeliLine.length === 1) {
     return `The line is currently 1. ${katzDeliLine[0]}.`
   } else {
-    var addToArray = []
-    var countdown = katzDeliLine.length
-    var num = 1
-    while(countdown >= 0) {
-    addToArray = num+'.'+katzDeliLine.shift()+','
-    katzDeliLine.unshift(addToArray)
-    countdown --
-    num++
-    }
+    var 
     return `The line is currently: ${num}, ${katzDeliLine.shift()}.`
   }
 }
