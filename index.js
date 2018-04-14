@@ -25,7 +25,7 @@ function currentLine(katzDeliLine) {
     var countdown = katzDeliLine.length
     var num = 1
     while(countdown >= 0) {
-    addToArray = ' '+num+'.'+katzDeliLine.pop()+','
+    addToArray = num+'.'+katzDeliLine.pop()+','
     katzDeliLine.unshift(addToArray)
     countdown --
     num++
