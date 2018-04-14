@@ -21,7 +21,8 @@ function currentLine(katzDeliLine) {
   } else if(katzDeliLine.length === 1) {
     return `The line is currently 1. ${katzDeliLine[0]}.`
   } else {
-    var 
-    return `The line is currently: ${num}, ${katzDeliLine.shift()}.`
+    var list = []
+    for(var i = 0; i <)
+    return `The line is currently: ${katzDeliLine.join(', ')}.`
   }
 }
